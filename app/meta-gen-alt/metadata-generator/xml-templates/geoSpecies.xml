@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Please refer to Dataset Point of Contact.</origin>
+        <pubdate/>
+        <title>GeoSpecies data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>www.landscapedatacommons.org</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Please refer to Dataset Point of Contact.</origin>
+            <pubdate/>
+            <title>Please refer to the Projects table in the Landscape Data Commons database.</title>
+            <geoform>tabular digital data</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This dataset includes plot level plant species indicators including  occurrence (from Species inventory),  cover (from Line-point intercept), height (from Vegetation height). Reference(s): Herrick, J.E., J. Van Zee, S.E. McCord, J.W. Karl, E. Courtright, and L. Burkett. 2018. The Monitoring Manual for Grassland, Shrubland, and Savanna Ecosystems. USDA-ARS.</abstract>
+      <purpose>This dataset should be used to determine plant species occurrence, cover, and height within a given plot.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt/>
+        <themekey>Plant species</themekey>
+      </theme>
+    </keywords>
+    <accconst>Please refer to the Projects table in the Landscape Data Commons database.</accconst>
+    <useconst>Please refer to the Projects table in the Landscape Data Commons database.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Please reference "Data Use Agreements" located in the Projects table.</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Please refer to Dataset Point of Contact.</attraccr>
+    </attracc>
+    <logic>Please refer to Dataset Point of Contact.</logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>Indicators calculated using the terradactyl R package.  https://github.com/Landscape-Data-Commons/terradactyl.</procdesc>
+        <procdate></procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>3</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres/>
+        <longres/>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>North American Datum of 1983 (NAD 83)</horizdn>
+        <ellips>Geodetic Reference System 1980</ellips>
+        <semiaxis>6378137.000000</semiaxis>
+        <denflat>298.257222</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>GeoSpecies Metadata</enttypl>
+        <enttypd/>
+        <enttypds/>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O. Box 30003, MSC 3JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Landscape Data Commons is freely available for use by the public. The USDA Agricultural Research Service (ARS) and the U.S. Government have not placed any restriction on its use or reproduction of its contents. Although all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the ARS and the U.S. Government do not and cannot warrant the performance or results that may be obtained by their use. The ARS and the U.S. Government disclaim all warranties, expressed or implied, including warranties of performance, merchantability or fitness for any particular purpose.</distliab>
+    <stdorder>
+      <digform><digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt><onlinopt><computer><networka><networkr>www.landscapedatacommons.org</networkr></networka></computer></onlinopt></digtopt></digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd/>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

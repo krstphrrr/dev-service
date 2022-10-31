@@ -1,0 +1,165 @@
+version: "3.3"
+services:
+  node:
+    image: landscapedatacommons/dev_node:1.0.3
+    build:
+      context: .
+      dockerfile: ./app/node.Dockerfile
+    container_name: node
+    volumes:
+      # - ./app:/usr/src
+      # comment out the shared if debugging
+      # the creation of live files
+      - shared:/usr/src/temp
+    # env file for docker compose debug
+    env_file:
+      - ./envvars/node-db.env
+    # secrets:
+    #   - node_ndow
+    #   - node_ndowp
+    #   - node_rhem
+    #   - node_rhemp
+    #   - node_nwern
+    #   - node_nwernp 
+    #   - node_ndownwern
+    #   - node_ndownwernp
+    #   - node_ndowrhem
+    #   - node_ndowrhemp
+    #   - node_nwernrhem
+    #   - node_nwernrhemp
+    #   - node_ndownwernrhem
+    #   - node_ndownwernrhemp 
+    #   - node_restricted 
+    #   - node_restrictedp 
+    #   - node_dbhost 
+    #   - node_db 
+    #   - node_dbport 
+    #   - node_auth0audience
+    #   - node_auth0domain
+    #   - node_auth0clientid
+    #   - node_sendgrid 
+    #   - node_appbaseurl 
+    #   - cron_mongopath
+
+    # deploy:
+    #   replicas: 2
+    #   update_config:
+    #     parallelism: 1
+    #     failure_action: rollback
+    #     delay: 20s
+      
+    #   restart_policy:
+    #     condition: on-failure
+    #     delay: 5s
+    #     window: 120s
+    
+
+  cron:
+    image: landscapedatacommons/dl_cron:1.0.1
+    build:
+      context: .
+      dockerfile: ./cron_container/cron.Dockerfile
+    container_name: cron
+    volumes:
+      # uncomment to have packet production happen in shared docker volume
+      - shared:/usr/src/temp
+      # uncomment to have packet production happen locally
+      # - ./app/temp:/usr/src/app/temp
+    # secrets:
+    #   - cron_mongopath
+    env_file:
+      - ./envvars/compose.env
+    
+  nginx:
+    image: landscapedatacommons/dev_nginx:1.0
+    build:
+      context: .
+      dockerfile: ./nginx_container/nginx.Dockerfile
+    container_name: nginx
+    ports:
+      - 5002:8082
+
+  mongo:
+    image: mongo:4.4.15
+    restart: always
+    container_name: mongo
+    ports:
+      - 27018:27017
+    # env file for docker compose debug
+    env_file:
+      - ./envvars/compose.env
+    volumes: 
+      - mongodata:/data/db
+    # config for docker stack setup
+
+    
+
+  mongo-express:
+    image: mongo-express:1.0.0-alpha.4
+    restart: always
+    container_name: mongo-express
+    volumes:
+      - mongodb_config:/data/configdb
+
+    # env file for docker compose debug
+    env_file:
+      - ./envvars/compose.env
+
+secrets:
+  cron_mongopath:
+    external: true
+  node_ndow:
+    external: true
+  node_ndowp:
+    external: true
+  node_rhem:
+    external: true
+  node_rhemp:
+    external: true
+  node_nwern:
+    external: true
+  node_nwernp:
+    external: true
+  node_ndownwern:
+    external: true
+  node_ndownwernp:
+    external: true
+  node_ndowrhem:
+    external: true
+  node_ndowrhemp:
+    external: true
+  node_nwernrhem:
+    external: true
+  node_nwernrhemp:
+    external: true
+  node_ndownwernrhem:
+    external: true
+  node_ndownwernrhemp:
+    external: true
+  node_restricted:
+    external: true
+  node_restrictedp:
+    external: true
+  node_dbhost:
+    external: true
+  node_db:
+    external: true
+  node_dbport:
+    external: true
+  node_auth0audience:
+    external: true
+  node_auth0domain:
+    external: true
+  node_auth0clientid:
+    external: true
+  node_sendgrid:
+    external: true
+  node_appbaseurl:
+    external: true
+
+
+
+volumes:
+  mongodata:
+  mongodb_config:
+  shared:

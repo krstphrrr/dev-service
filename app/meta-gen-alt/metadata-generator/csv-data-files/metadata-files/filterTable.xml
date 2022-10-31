@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Please refer to Dataset Point of Contact.</origin>
+        <pubdate/>
+        <title>Geoindicators Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>www.landscapedatacommons.org</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Please refer to Dataset Point of Contact.</origin>
+            <pubdate/>
+            <title>Please refer to the Projects table in the Landscape Data Commons database.</title>
+            <geoform>tabular digital data</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>GeoIndicators contains summary indicators from the Line-point intercept, Gap intercept, Vegetation height, Soil stability, Interpreting Indicators of Rangeland Health. These indicators represent biological and physical components are often used as indicators of the functional status of ecological processes and site integrity. Reference(s): a) Herrick, J.E., J. Van Zee, S.E. McCord, J.W. Karl, E. Courtright, and L. Burkett. 2018. The Monitoring Manual for Grassland, Shrubland, and Savanna Ecosystems. USDA-ARS. b) Pellant, M., P. Shaver, D. Pyke, and J. E. Herrick. 2005. Interpreting Indicators of Rangeland Health, Version 4.0. Interagency Technical Reference. U.S. Department of Interior, Bureau of Land Management, Denver, CO.</abstract>
+      <purpose>This dataset can and should be used as a communication tool across interest groups (i.e. scientists and land managers can translate the concept of rangeland health with the public) to identify any potential risks in degradation or where current resource problems may exist. This approach can also be implemented as a means to assist in choosing monitoring sites for various monitoring programs.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>GeoIndicators</themekt>
+        <themekey>Gap intercept</themekey>
+        <themekey>Vegetation height</themekey>
+        <themekey>Line-point intercept</themekey>
+        <themekey>Interpreting Indicators of Rangeland Health</themekey>
+        <themekey>Soil stability</themekey>
+      </theme>
+    </keywords>
+    <accconst>Please refer to the Projects table in the Landscape Data Commons database.</accconst>
+    <useconst>Please refer to the Projects table in the Landscape Data Commons database.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Please reference "Data Use Agreements" located in the Projects table.</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Please refer to Dataset Point of Contact.</attraccr>
+    </attracc>
+    <logic>Please refer to Dataset Point of Contact.</logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>Indicators were calculated using the terradactyl R package indicator functions. https://github.com/Landscape-Data-Commons/terradactyl.</procdesc>
+        <procdate/>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>3</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres/>
+        <longres/>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>North American Datum of 1983 (NAD 83)</horizdn>
+        <ellips>Geodetic Reference System 1980</ellips>
+        <semiaxis>6378137.000000</semiaxis>
+        <denflat>298.257222</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>filterTable</enttypl>
+        <enttypd/>
+        <enttypds>Producer Defined</enttypds>
+        <attr>
+          <attrlabl>PrimaryKey</attrlabl>
+          <attrdef>Unique identifier for each plot-visit.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>modis_landcover</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>na_l1name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>na_l2name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>us_l3name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>us_l4name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>EcologicalSiteId</attrlabl>
+          <attrdef>'Unique ID referring to the ecological site</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>mlrarsym</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>mlra_name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>State</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateVisited</attrlabl>
+          <attrdef>The date that data were collected at the plot.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>ProjectKey</attrlabl>
+          <attrdef>Unique identifier of the broader project under which data were collected.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>BareSoilCover</attrlabl>
+          <attrdef>The percent of ground, not covered by foliar or basal plants, rock fragments, biological crusts, or litter. For example, points with sagebrush over bare soil are not counted in this indicator, also points with rock as the soil surface code are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>TotalFoliarCover</attrlabl>
+          <attrdef>The percent total foliar cover of plants in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_TotalLitterCover</attrlabl>
+          <attrdef>The percent cover of total litter (first hit), both herbaceous and woody, in the plot, not including litter that has cover above it. For example, points with sagebrush over litter are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_RockCover</attrlabl>
+          <attrdef>The percent cover (first hit) of rock (i.e., rock, boulder, cobble, gravel, bedrock, and stone) in the plot, not including rock that has cover above it. For example, points with sagebrush over rock are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_LichenCover</attrlabl>
+          <attrdef>The percent cover of lichens (first hit) in the plot, not including lichens that have cover above them. For example, points with sagebrush over lichen are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_CyanobacteriaCover</attrlabl>
+          <attrdef>The percent cover of cyanobacterial crust (first hit) in the plot, not including cyanobacterial crust that has cover above it. For example, points with sagebrush over biological crust are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_MossCover</attrlabl>
+          <attrdef>The percent cover of mosses (first hit) in the plot, not including mosses that have cover above them. For example, points with sagebrush over moss are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Woody_Avg</attrlabl>
+          <attrdef>Average height in cm of woody plants in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Woody height but the code in the species list is a Non-woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Herbaceous_Avg</attrlabl>
+          <attrdef>Average height in cm of herbaceous plants in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_25_50</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 25-50 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_51_100</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 51-100 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_101_200</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 101-200 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_200_plus</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are greater than 200 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_All</attrlabl>
+          <attrdef>The average soil aggregate stability of all samples in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_Protected</attrlabl>
+          <attrdef>The average soil aggregate stability of samples collected under with cover (Canopy or Grass, Tree, Shrub, Forb, Root Mat) in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_Unprotected</attrlabl>
+          <attrdef>The average soil aggregate stability of samples collected between cover (e.g., with no cover directly above them) in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Latitude_NAD83</attrlabl>
+          <attrdef>The latitude of the plot location in NAD83 datum. If Location Status = Private this is a fuzzed coordinate.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Longitude_NAD83</attrlabl>
+          <attrdef>The longitude of the plot location in NAD83 datum. If LocationStatus = Private this is a fuzzed coordinate.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O. Box 30003, MSC 3JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Landscape Data Commons is freely available for use by the public. The USDA Agricultural Research Service (ARS) and the U.S. Government have not placed any restriction on its use or reproduction of its contents. Although all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the ARS and the U.S. Government do not and cannot warrant the performance or results that may be obtained by their use. The ARS and the U.S. Government disclaim all warranties, expressed or implied, including warranties of performance, merchantability or fitness for any particular purpose.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>www.landscapedatacommons.org</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd/>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

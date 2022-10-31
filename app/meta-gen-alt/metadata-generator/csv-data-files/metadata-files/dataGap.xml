@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Please refer to Dataset Point of Contact.</origin>
+        <pubdate/>
+        <title>Gap Intercept Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>www.landscapedatacommons.org</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Please refer to Dataset Point of Contact.</origin>
+            <pubdate/>
+            <title>Please refer to the Projects table in Landscape Data Commons database.</title>
+            <geoform>tabular digital data</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The spatial pattern of vegetation is correlated with soil and site stability, hydrologic function and biotic integrity. The  Gap Intercept method does not measure spatial pattern directly, but does provide an indication of the extent to which plant cover is aggregated (forming a few large gaps) or dispersed (forming many small gaps). A reduction in total plant foliar cover will usually, but not always, increase the area encompassed by larger gaps. The distance between plant bases (basal gaps) increases when plants become more aggregated and when basal cover declines (e.g., when shrubs replace grasses). Reference(s): Herrick, J.E., J. Van Zee, S.E. McCord, J.W. Karl, E. Courtright, and L. Burkett. 2018. The Monitoring Manual for Grassland, Shrubland, and Savanna Ecosystems. USDA-ARS.</abstract>
+      <purpose>Canopy gap measurements should be taken to determine the horizontal structure of the plant community, and therefore its distribution.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>Gap intercept data</themekt>
+        <themekey>gap</themekey>
+        <themekey>canopy</themekey>
+        <themekey>basal</themekey>
+        <themekey>intercept</themekey>
+      </theme>
+    </keywords>
+    <accconst>Please refer to the Projects table in the Landscape Data Commons database.</accconst>
+    <useconst>Please refer to the Projects table in the Landscape Data Commons database.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Please reference "Data Use Agreements" located in the Projects table.</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Please see Dataset Point of Contact.</attraccr>
+    </attracc>
+    <logic>Please see Dataset Point of Contact.</logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>Data gathered into a harmonized "tall" format using the terradactyl R package gather_gap() function. https://github.com/Landscape-Data-Commons/terradactyl.</procdesc>
+        <procdate/>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>3</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>dataGap</enttypl>
+        <enttypd/>
+        <enttypds>Producer Defined</enttypds>
+        <attr>
+          <attrlabl>rid</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PrimaryKey</attrlabl>
+          <attrdef>Unique identifier for each plot-visit.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DBKey</attrlabl>
+          <attrdef>Code denoting original database information about the project.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>ProjectKey</attrlabl>
+          <attrdef>Unique identifier of the broader project under which data were collected.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RecType</attrlabl>
+          <attrdef>Type of gap data: P = perennial canopy gap, B = basal gap, C = canopy gap.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SeqNo</attrlabl>
+          <attrdef>Auto-generated sequence number of recorded gap order.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapStart</attrlabl>
+          <attrdef>Start position of canopy/basal gap along transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapEnd</attrlabl>
+          <attrdef>End position of canopy/basal gap along transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Gap</attrlabl>
+          <attrdef>Length of canopy/basal gap.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>LineKey</attrlabl>
+          <attrdef>Unique key for transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RecKey</attrlabl>
+          <attrdef>Unique key for Gap Intercept data collection.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FormDate</attrlabl>
+          <attrdef>Date data were collected (defaults to today's date although user can modify).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateModified</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FormType</attrlabl>
+          <attrdef>Form for Gap Intercept data collection.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Direction</attrlabl>
+          <attrdef>Denotes whether transect is read from low-to-high (e.g., 0-100 m) or high-to-low (e.g., 100-0 m).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Measure</attrlabl>
+          <attrdef>Data collected in metric. Data originally collected in imperial units are converted to metric.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>LineLengthAmount</attrlabl>
+          <attrdef>Length of the Gap Intercept transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapMin</attrlabl>
+          <attrdef>Minimum gap size in centimeters.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapData</attrlabl>
+          <attrdef>What kind of Gap data are being recorded: canopy gap, basal gap, or both. 1 = both canopy and basal; 2 = canopy only; 3 = basal only.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PerennialsCanopy</attrlabl>
+          <attrdef>Checkbox answering the question “Do perennial plants stop a canopy gap?” (i.e., are they considered to be ""canopy""). At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AnnualGrassesCanopy</attrlabl>
+          <attrdef>Checkbox answering the question “Do annual grasses stop a canopy gap?” (i.e., are they considered to be ""canopy""). At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AnnualForbsCanopy</attrlabl>
+          <attrdef>Checkbox answering the question “Do annual forbs stop a canopy gap?” (i.e., are they considered to be ""canopy""). At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>OtherCanopy</attrlabl>
+          <attrdef>Checkbox answering the question “Are there other species or elements that stop a canopy gap?” (i.e., are they considered to be ""canopy""). At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Notes</attrlabl>
+          <attrdef>Notes about the Gap Intercept data collection for the transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>NoCanopyGaps</attrlabl>
+          <attrdef>1 = no canopy gaps exist for the transect (line); 0 = basal gaps exist for the transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>NoBasalGaps</attrlabl>
+          <attrdef>1 = no basal gaps exist for the transect (line); 0 = basal gaps exist for the transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateLoadedInDb</attrlabl>
+          <attrdef>Date that the data were uploaded into Landscape Data Commons (YYYY-MM-DD).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PerennialsBasal</attrlabl>
+          <attrdef>Checkbox answering the question “Do perennial plants stop a basal gap?” At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AnnualGrassesBasal</attrlabl>
+          <attrdef>Checkbox answering the question “Do annual grasses stop a basal gap?” At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AnnualForbsBasal</attrlabl>
+          <attrdef>Checkbox answering the question “Do annual forbs stop a basal gap?” At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>OtherBasal</attrlabl>
+          <attrdef>Checkbox answering the question “Are there other species or elements that stop a basal gap?” At least one option that stops a gap must be selected. 1 = yes; 0 = no.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>source</attrlabl>
+          <attrdef>Source data format. Required for use of terradactyl</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O. Box 30003, MSC 3JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Landscape Data Commons is freely available for use by the public. The USDA Agricultural Research Service (ARS) and the U.S. Government have not placed any restriction on its use or reproduction of its contents. Although all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the ARS and the U.S. Government do not and cannot warrant the performance or results that may be obtained by their use. The ARS and the U.S. Government disclaim all warranties, expressed or implied, including warranties of performance, merchantability or fitness for any particular purpose.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>www.landscapedatacommons.org</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd/>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Please refer to Dataset Point of Contact.</origin>
+        <pubdate/>
+        <title>Geoindicators Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>www.landscapedatacommons.org</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Please refer to Dataset Point of Contact.</origin>
+            <pubdate/>
+            <title>Please refer to the Projects table in the Landscape Data Commons database.</title>
+            <geoform>tabular digital data</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>GeoIndicators contains summary indicators from the Line-point intercept, Gap intercept, Vegetation height, Soil stability, Interpreting Indicators of Rangeland Health. These indicators represent biological and physical components are often used as indicators of the functional status of ecological processes and site integrity. Reference(s): a) Herrick, J.E., J. Van Zee, S.E. McCord, J.W. Karl, E. Courtright, and L. Burkett. 2018. The Monitoring Manual for Grassland, Shrubland, and Savanna Ecosystems. USDA-ARS. b) Pellant, M., P. Shaver, D. Pyke, and J. E. Herrick. 2005. Interpreting Indicators of Rangeland Health, Version 4.0. Interagency Technical Reference. U.S. Department of Interior, Bureau of Land Management, Denver, CO.</abstract>
+      <purpose>This dataset can and should be used as a communication tool across interest groups (i.e. scientists and land managers can translate the concept of rangeland health with the public) to identify any potential risks in degradation or where current resource problems may exist. This approach can also be implemented as a means to assist in choosing monitoring sites for various monitoring programs.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>GeoIndicators</themekt>
+        <themekey>Gap intercept</themekey>
+        <themekey>Vegetation height</themekey>
+        <themekey>Line-point intercept</themekey>
+        <themekey>Interpreting Indicators of Rangeland Health</themekey>
+        <themekey>Soil stability</themekey>
+      </theme>
+    </keywords>
+    <accconst>Please refer to the Projects table in the Landscape Data Commons database.</accconst>
+    <useconst>Please refer to the Projects table in the Landscape Data Commons database.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Please reference "Data Use Agreements" located in the Projects table.</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Please refer to Dataset Point of Contact.</attraccr>
+    </attracc>
+    <logic>Please refer to Dataset Point of Contact.</logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>Indicators were calculated using the terradactyl R package indicator functions. https://github.com/Landscape-Data-Commons/terradactyl.</procdesc>
+        <procdate/>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>3</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres/>
+        <longres/>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>North American Datum of 1983 (NAD 83)</horizdn>
+        <ellips>Geodetic Reference System 1980</ellips>
+        <semiaxis>6378137.000000</semiaxis>
+        <denflat>298.257222</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>geoIndicators</enttypl>
+        <enttypd/>
+        <enttypds>Producer Defined</enttypds>
+        <attr>
+          <attrlabl>rid</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PrimaryKey</attrlabl>
+          <attrdef>Unique identifier for each plot-visit.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DBKey</attrlabl>
+          <attrdef>Code denoting original database information about the project.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>ProjectKey</attrlabl>
+          <attrdef>Unique identifier of the broader project under which data were collected.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateVisited</attrlabl>
+          <attrdef>The date that data were collected at the plot.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>EcologicalSiteId</attrlabl>
+          <attrdef>'Unique ID referring to the ecological site</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PercentCoveredByEcoSite</attrlabl>
+          <attrdef>Percent of plot covered by Ecological Site.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Latitude_NAD83</attrlabl>
+          <attrdef>The latitude of the plot location in NAD83 datum. If Location Status = Private this is a fuzzed coordinate.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Longitude_NAD83</attrlabl>
+          <attrdef>The longitude of the plot location in NAD83 datum. If LocationStatus = Private this is a fuzzed coordinate.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>LocationStatus</attrlabl>
+          <attrdef>Notes whether a location if public or private. If private, Latitude_NAD83 and Longitude_NAD83 will be fuzzed coordinates.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>LocationType</attrlabl>
+          <attrdef>Coordinate type, Field (actual) or Target (GPS) location for plot.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Latitude_NAD83_Actual</attrlabl>
+          <attrdef>The measured latitude of the plot location in NAD83 datum regardless of LocationStatus.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Longitude_NAD83_Actual</attrlabl>
+          <attrdef>The measured longitude of the plot location in NAD83 datum regardless of LocationStatus.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>BareSoilCover</attrlabl>
+          <attrdef>The percent of ground, not covered by foliar or basal plants, rock fragments, biological crusts, or litter. For example, points with sagebrush over bare soil are not counted in this indicator, also points with rock as the soil surface code are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>TotalFoliarCover</attrlabl>
+          <attrdef>The percent total foliar cover of plants in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_AnnGrassCover</attrlabl>
+          <attrdef>The percent foliar cover of annual grasses in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_ForbCover</attrlabl>
+          <attrdef>The percent foliar cover of forbs in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_GrassCover</attrlabl>
+          <attrdef>The percent foliar cover of grasses in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_PerenForbCover</attrlabl>
+          <attrdef>The percent foliar cover of perennial forbs in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_PerenForbGrassCover</attrlabl>
+          <attrdef>The percent foliar cover of perennial grasses and forbs in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_PerenGrassCover</attrlabl>
+          <attrdef>The percent foliar cover of perennial grasses in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>AH_ShrubCover</attrlabl>
+          <attrdef>The percent foliar cover of shrubs in the plot. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_CyanobacteriaCover</attrlabl>
+          <attrdef>The percent cover of cyanobacterial crust (first hit) in the plot, not including cyanobacterial crust that has cover above it. For example, points with sagebrush over biological crust are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_DepSoilCover</attrlabl>
+          <attrdef>The percent cover of deposited soil (first hit) in the plot, not including deposited soil that has cover above it. For example, points with sagebrush over deposited soil are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_DuffCover</attrlabl>
+          <attrdef>The percent cover of duff (first hit) in the plot, not including duff that has cover above them. For example, points with sagebrush over duff are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_EmbLitterCover</attrlabl>
+          <attrdef>The percent cover of embedded litter (first hit) in the plot, not including embedded litter that has cover above it. For example, points with sagebrush over embedded litter are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_HerbLitterCover</attrlabl>
+          <attrdef>The percent cover of herbaceous litter (first hit) in the plot, not including herbaceous litter that has cover above it. For example, points with sagebrush over herbaceous litter are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_LichenCover</attrlabl>
+          <attrdef>The percent cover of lichens (first hit) in the plot, not including lichens that have cover above them. For example, points with sagebrush over lichen are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_MossCover</attrlabl>
+          <attrdef>The percent cover of mosses (first hit) in the plot, not including mosses that have cover above them. For example, points with sagebrush over moss are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_RockCover</attrlabl>
+          <attrdef>The percent cover (first hit) of rock (i.e., rock, boulder, cobble, gravel, bedrock, and stone) in the plot, not including rock that has cover above it. For example, points with sagebrush over rock are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_TotalLitterCover</attrlabl>
+          <attrdef>The percent cover of total litter (first hit), both herbaceous and woody, in the plot, not including litter that has cover above it. For example, points with sagebrush over litter are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_VagrLichenCover</attrlabl>
+          <attrdef>The percent cover of vagrant lichen (first hit) in the plot, not including vagrant lichen that has cover above it. For example, points with sagebrush over vagrant lichen are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_WaterCover</attrlabl>
+          <attrdef>The percent cover of water (first hit) in the plot, not including water that has cover above it. For example, points with perennial grass over water are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FH_WoodyLitterCover</attrlabl>
+          <attrdef>The percent cover of woody litter (first hit) in the plot, not including woody litter that has cover above it. For example, points with sagebrush over woody litter are not counted in this indicator. This indicator is derived from the Line-point Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_101_200</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 101-200 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_200_plus</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are greater than 200 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_25_50</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 25-50 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_25_plus</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are greater than 25 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>GapCover_51_100</attrlabl>
+          <attrdef>The percentage of the plot's soil surface covered by gaps between plant canopies that are from 51-100 cm in size. This indicator is derived from the Gap Intercept method.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Forb_Avg</attrlabl>
+          <attrdef>Average height in cm of forbs in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Grass_Avg</attrlabl>
+          <attrdef>Average height in cm of grasses in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Herbaceous_Avg</attrlabl>
+          <attrdef>Average height in cm of herbaceous plants in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_PerenForb_Avg</attrlabl>
+          <attrdef>Average height in cm of perennial forbs in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_PerenForbGrass_Avg</attrlabl>
+          <attrdef>Average height in cm of perennial forbs and grasses in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_PerenGrass_Avg</attrlabl>
+          <attrdef>Average height in cm of perennial grasses in the plot. This indictor is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Non-woody height but the code in the species list is a Woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Hgt_Woody_Avg</attrlabl>
+          <attrdef>Average height in cm of woody plants in the plot. This indicator is derived from the Vegetation Height method. Measurements will be dropped in any instance where a species was measured as a Woody height but the code in the species list is a Non-woody species. Heights where a species code was recorded but the height = 0 are not included in the height calculations.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_AnnualProd</attrlabl>
+          <attrdef>Amount of total annual production as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_BareGround</attrlabl>
+          <attrdef>Degree of bare ground exposure departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_BioticIntegrity</attrlabl>
+          <attrdef>Rating of the Biotic Integrity attribute of rangeland health. Biotic integrity is defined as the capacity of the biotic community to support ecological processes within the normal range of variability expected for the site, to resist a loss in the capacity to support these processes, and to recover this capacity when losses do occur. The biotic community includes plants, animals, and microorganisms occurring both above and below ground. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_CommentsBI</attrlabl>
+          <attrdef>Comments regarding the Biotic Integrity attribute of rangeland health. Biotic integrity is defined as the capacity of the biotic community to support ecological processes within the normal range of variability expected for the site, to resist a loss in the capacity to support these processes, and to recover this capacity when losses do occur. The biotic community includes plants, animals, and microorganisms occurring both above and below ground.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_CommentsHF</attrlabl>
+          <attrdef>Comments regarding the Hydrologic Function attribute of rangeland health. Hydrologic function is defined as the capacity of an area to capture, store, and safely release water from rainfall, run-on, and snowmelt (where relevant), to resist a reduction in this capacity, and to recover this capacity where a reduction does occur.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_CommentsSS</attrlabl>
+          <attrdef>Comments regarding the Soil &amp; Site Stability attribute of rangeland health. Soil &amp; Site Stability is defined as the capacity of an area to limit redistribution and loss of soil resources (including nutrients and organic matter) by wind and water.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_Compaction</attrlabl>
+          <attrdef>Presence or absence of a compaction layer, distribution of the layer, and density and thickness as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_DeadDyingPlantParts</attrlabl>
+          <attrdef>Degree of departure from reference state of proportion of dead or dying plants or plant parts. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_FuncSructGroup</attrlabl>
+          <attrdef>Degree of change of the functional/structural plant communities as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO =: Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_Gullies</attrlabl>
+          <attrdef>Degree of gully formation departure from reference conditions. (NS =: None to Slight; SM = Slight to Moderate; MO =: Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_HydrologicFunction</attrlabl>
+          <attrdef>Rating of the Hydrologic Function attribute of rangeland health. Hydrologic function is defined as the capacity of an area to capture, store, and safely release water from rainfall, run-on, and snowmelt (where relevant), to resist a reduction in this capacity, and to recover this capacity where a reduction does occur. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_InvasivePlants</attrlabl>
+          <attrdef>Assessment of presence of invasive plants. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_LitterAmount</attrlabl>
+          <attrdef>Amount of herbaceous and woody litter present as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO =: Moderate; ME = Moderate to Extreme; ET =: Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_LitterMovement</attrlabl>
+          <attrdef>Degree of litter movement due to water or wind as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME =: Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_PedestalsTerracettes</attrlabl>
+          <attrdef>Degree of erosional pedestal and terracette formation as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_PlantCommunityComp</attrlabl>
+          <attrdef>Degree to which changes in functional/structural groups and their associated species composition and distribution have negatively affected infiltration or runoff as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_ReprodCapabilityPeren</attrlabl>
+          <attrdef>Degree to which the vigor or reproductive capability of noninvasive perennial plants has diminished relative to reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_Rills</attrlabl>
+          <attrdef>Degree of rill formation as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate, ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_SoilSiteStability</attrlabl>
+          <attrdef>Rating of the Soil &amp; Site Stability attribute of rangeland health. Soil &amp; Site Stability is defined as the capacity of an area to limit redistribution and loss of soil resources (including nutrients and organic matter) by wind and water. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6(https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_SoilSurfLossDeg</attrlabl>
+          <attrdef>Degree of soil surface loss and degradation from wind and water erosion as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_SoilSurfResisErosion</attrlabl>
+          <attrdef>Degree of reduced soil surface resistance to erosion as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_WaterFlowPatterns</attrlabl>
+          <attrdef>Degree of water flow patterns formation as a departure from reference conditions. (NS = None to Slight; SM = Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RH_WindScouredAreas</attrlabl>
+          <attrdef>Degree of wind scoured and depositional area and connectivity as a departure from reference conditions. (NS = None to Slight; SM =: Slight to Moderate; MO = Moderate; ME = Moderate to Extreme; ET = Extreme to Total). Based on Interpreting Indicators of Rangeland Health Technical Reference 1734-6 (https://www.landscapetoolbox.org/manuals/iirhv5/).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_All</attrlabl>
+          <attrdef>The average soil aggregate stability of all samples in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_Protected</attrlabl>
+          <attrdef>The average soil aggregate stability of samples collected under with cover (Canopy or Grass, Tree, Shrub, Forb, Root Mat) in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SoilStability_Unprotected</attrlabl>
+          <attrdef>The average soil aggregate stability of samples collected between cover (e.g., with no cover directly above them) in the plot. This indicator is measured using the Soil Aggregate Stability method. In this test, stability ranges from 1-6, with 1 being the least stable and 6 being the most stable.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateLoadedInDb</attrlabl>
+          <attrdef>Date that the data were uploaded into Landscape Data Commons (YYYY-MM-DD).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>mlra_name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>mlrarsym</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>na_l1name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>na_l2name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>us_l3name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>us_l4name</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>State</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>modis_landcover</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>wkb_geometry</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O. Box 30003, MSC 3JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Landscape Data Commons is freely available for use by the public. The USDA Agricultural Research Service (ARS) and the U.S. Government have not placed any restriction on its use or reproduction of its contents. Although all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the ARS and the U.S. Government do not and cannot warrant the performance or results that may be obtained by their use. The ARS and the U.S. Government disclaim all warranties, expressed or implied, including warranties of performance, merchantability or fitness for any particular purpose.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>www.landscapedatacommons.org</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd/>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

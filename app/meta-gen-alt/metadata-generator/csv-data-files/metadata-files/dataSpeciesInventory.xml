@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Please refer to Dataset Point of Contact.</origin>
+        <pubdate/>
+        <title>Species Inventory Data</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>www.landscapedatacommons.org</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Please refer to Dataset Point of Contact.</origin>
+            <pubdate/>
+            <title>Please refer to the Projects table in the Landscape Data Commons database.</title>
+            <geoform>tabular digital data</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This dataset includes observations of plant species found within the monitoring plot during a systematic survey of the plot. Reference(s): Herrick, J.E., J. Van Zee, S.E. McCord, J.W. Karl, E. Courtright, and L. Burkett. 2018. The Monitoring Manual for Grassland, Shrubland, and Savanna Ecosystems. USDA-ARS.</abstract>
+      <purpose>This dataset should be used to determine plant species presence and species richness.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate/>
+          <enddate/>
+        </rngdates>
+      </timeinfo>
+      <current>observed</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc/>
+        <eastbc/>
+        <northbc/>
+        <southbc/>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>geoscientificInformation</themekey>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>Species Inventory</themekt>
+        <themekey/>
+      </theme>
+    </keywords>
+    <accconst>Please refer to the Projects table in the Landscape Data Commons database.</accconst>
+    <useconst>Please refer to the Projects table in the Landscape Data Commons database.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Please reference "Data Use Agreements" located in the Projects table.</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Please refer to Dataset Point of Contact.</attraccr>
+    </attracc>
+    <logic>Please refer to Dataset Point of Contact.</logic>
+    <complete/>
+    <lineage>
+      <procstep>
+        <procdesc>Data gathered into a harmonized "tall" format using the terradactyl R package gather_species_inventory() function. https://github.com/Landscape-Data-Commons/terradactyl.</procdesc>
+        <procdate/>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>3</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>dataSpeciesInventory</enttypl>
+        <enttypd/>
+        <enttypds>Producer Defined</enttypds>
+        <attr>
+          <attrlabl>rid</attrlabl>
+          <attrdef/>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>PrimaryKey</attrlabl>
+          <attrdef>Unique identifier for each plot-visit.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DBKey</attrlabl>
+          <attrdef>Code denoting original database information about the project.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>ProjectKey</attrlabl>
+          <attrdef>Unique identifier of the broader project under which data were collected.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Species</attrlabl>
+          <attrdef>Species observed in plot.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DENSITY</attrlabl>
+          <attrdef>This refers to a density class for the plant species. Values are 1 = 1-10 plants in the plot; 2 = 11-100; 3 = 101-500; 4 =501-1000; 5 = &gt;1000.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>LineKey</attrlabl>
+          <attrdef>Unique key for transect (line).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>RecKey</attrlabl>
+          <attrdef>Unique key for Species Inventory data collection.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FormType</attrlabl>
+          <attrdef>Form for Species Inventory data collection.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>FormDate</attrlabl>
+          <attrdef>Date data were collected (defaults to today's date although user can modify).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRichMethod</attrlabl>
+          <attrdef>Species Richness method (1 = Monitoring Manual; 2 = Custom 1; 3 = Custom 2; 4 = AIM).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRichMeasure</attrlabl>
+          <attrdef>Data collected in metric or English units.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRichNbrSubPlots</attrlabl>
+          <attrdef>Number of sub-plots used (1 through 6).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich1Container</attrlabl>
+          <attrdef>Container #1 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich1Shape</attrlabl>
+          <attrdef>Sub-plot shape of #1 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich1Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #1 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich1Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #1 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich1Area</attrlabl>
+          <attrdef>Area in sq m of #1 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich2Container</attrlabl>
+          <attrdef>Container #2 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich2Shape</attrlabl>
+          <attrdef>Sub-plot shape of #2 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich2Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #2 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich2Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #2 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich2Area</attrlabl>
+          <attrdef>Area in sq m of #2 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich3Container</attrlabl>
+          <attrdef>Container #3 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich3Shape</attrlabl>
+          <attrdef>Sub-plot shape of #3 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich3Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #3 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich3Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #3 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich3Area</attrlabl>
+          <attrdef>Area in sq m of #3 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich4Container</attrlabl>
+          <attrdef>Container #4 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich4Shape</attrlabl>
+          <attrdef>Sub-plot shape of #4 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich4Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #4 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich4Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #4 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich4Area</attrlabl>
+          <attrdef>Area in sq m of #4 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich5Container</attrlabl>
+          <attrdef>Container #5 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich5Shape</attrlabl>
+          <attrdef>Sub-plot shape of #5 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich5Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #5 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich5Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #5 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich5Area</attrlabl>
+          <attrdef>Area in sq m of #5 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich6Container</attrlabl>
+          <attrdef>Container #6 selected (1 = true; 0 = false).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich6Shape</attrlabl>
+          <attrdef>Sub-plot shape of #6 container (1 = rectangle; 2 = circle).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich6Dim1</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #6 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich6Dim2</attrlabl>
+          <attrdef>If rectangle, dimension for one of the sides. If circle, the radius of #6 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>SpecRich6Area</attrlabl>
+          <attrdef>Area in sq m of #6 container.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>Notes</attrlabl>
+          <attrdef>Notes for Species Richness data collection.</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>source</attrlabl>
+          <attrdef>Source data format. Required for use of terradactyl</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+        <attr>
+          <attrlabl>DateLoadedInDb</attrlabl>
+          <attrdef>Date that the data were uploaded into Landscape Data Commons (YYYY-MM-DD).</attrdef>
+          <attrdefs>Producer Defined</attrdefs>
+          <attrdomv>
+            <udom/>
+          </attrdomv>
+        </attr>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O. Box 30003, MSC 3JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The Landscape Data Commons is freely available for use by the public. The USDA Agricultural Research Service (ARS) and the U.S. Government have not placed any restriction on its use or reproduction of its contents. Although all reasonable efforts have been taken to ensure the accuracy and reliability of the software and data, the ARS and the U.S. Government do not and cannot warrant the performance or results that may be obtained by their use. The ARS and the U.S. Government disclaim all warranties, expressed or implied, including warranties of performance, merchantability or fitness for any particular purpose.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>www.landscapedatacommons.org</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd/>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Sarah McCord</cntper>
+          <cntorg>USDA  ARS Jornada Experimental Range</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>P.O.Box 30003, MSC 3 JER, NMSU</address>
+          <city>Las Cruces</city>
+          <state>NM</state>
+          <postal>88003</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>575 636 7527</cntvoice>
+        <cntemail>sarah.mccord@usda.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

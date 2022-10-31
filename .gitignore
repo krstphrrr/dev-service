@@ -1,0 +1,12 @@
+node_modules/
+
+**/*.txt
+**/*.env
+**/config.ts
+**/*.csv
+**/ldc_circularlogo.png
+**/auth_config.json
+**/*.zip
+**/*.drawio
+**/dl-config.sh
+
