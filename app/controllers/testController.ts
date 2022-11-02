@@ -39,6 +39,9 @@ export const showData = async (req, res) => {
   // 
   let dl_link = process.env.APP_BASE_URL
   let filePath
+
+  let err1 = ["Processing request... (Refresh to update processing status)","Please note that large download requests may result in significant processing delays"]
+
   try {
       const file = await Files.findOne({ uuid: req.params.uuid });
 
@@ -49,13 +52,15 @@ export const showData = async (req, res) => {
       3. file & filesync false & diff>60 => request exists (local file doesnt ) but  more than 60 has passed. Request expired
       */ 
       if(!file){
-          return res.render('download', { error: 'Packet request does not exist. Please request again.'});
+          return res.render('download', { 
+            error: err1 
+          });
       } else {
         filePath = `${file.path}`
         let diff = timeSinceCreated(file["createdAt"],'minutes')
 
         if (file && !fs.existsSync(filePath) && diff<60){ // if file exists 
-            return res.render('download', { error: 'Processing request... (Refresh to update processing status)'});
+            return res.render('download', { error: err1 });
 
         } else if (file && !fs.existsSync(filePath) && diff>60){
             return res.render('download', { error: 'Request expired. Please request data again.'});

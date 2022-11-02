@@ -89,16 +89,17 @@ export const newpackager = async (request, user_profile:any= {}, linkObject) =>{
     
     
     let allPromises = Promise.all([initialPull, fullTables])
-
+    let csvs =  {}
     initialPull.then(x=>{
       for(let table of Object.keys(fullTables)){
         console.log(`printing ${table}!!`)
+        
         fullTables[table].then(async data=>{
-          let csv = await creatingCSV(data, table)
-          if(csv!==null){
-            zip.file(`${table}.csv`,csv)
+          csvs[table] = await creatingCSV(data, table)
+          if(csvs[table]!==null){
+            zip.file(`${table}.csv`,csvs[table])
           }
-          let desc = await extractColumnDescriptions(csv,table)
+          let desc = await extractColumnDescriptions(csvs[table],table)
           descriptionObj[table] = desc 
         })
         /*
@@ -107,7 +108,7 @@ export const newpackager = async (request, user_profile:any= {}, linkObject) =>{
           DO generate xml
         */
         .then(async not_used=>{
-          if(descriptionObj[table]!==null && descriptionObj[table]!==undefined){
+          if(descriptionObj[table]!==null && descriptionObj[table]!==undefined && table!="filterTable"){
             xmlObject[table] = await generateMetadataXmlFile(descriptionObj[table], table)
           }
         })
@@ -116,8 +117,14 @@ export const newpackager = async (request, user_profile:any= {}, linkObject) =>{
           DO add xml to zip
         */
         .then(async not_used=>{
-          console.log("zipeando xmls")
-          zip.file(path.join("metadata",`${table}_metadata.xml`), xmlObject[table])
+          // console.log(`${Object.keys(csvs)}`)
+          if(csvs[table]!==null && csvs[table]!==undefined && table!="filterTable"){
+            console.log(`zipping ${table} xml..`)
+            zip.file(path.join("metadata",`${table}_metadata.xml`), xmlObject[table])
+          } else {
+            console.log(`skipping ${table} xml due to empty dataset`)
+          }
+          
         })
       }
     })

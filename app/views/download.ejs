@@ -11,7 +11,15 @@
         
         <% if(locals.error){ %>
             <h2>Landscape Data Commons - Data Service</h2>
-        <h4><%= locals.error %></h4>
+        <!-- <h4><%= locals.error %></h4> -->
+            <% if(Array.isArray(locals.error)) { %>
+
+                <% locals.error.forEach(function(msg) { %>
+                    <h4><%= msg %></h4>
+                <% }) %>
+            <%} else { %>
+                    <h4><%= locals.error %></h4>
+            <% } %>
         <% } else { %>
         <h1>Landscape Data Commons - Data Service</h1>
         <h2>Your file is ready to download</h2>
