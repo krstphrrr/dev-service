@@ -35,8 +35,8 @@ let timeout_len = (arraylength)=>{
   const maxp = 39000; // max size of primarykey array
 
   // result range
-  const minv = Math.log(10000); // min amount of timeout size (10s)
-  const maxv = Math.log(50000); // max amount of timeout size (50s)
+  const minv = Math.log(33000); // min amount of timeout size (10s)
+  const maxv = Math.log(70000); // max amount of timeout size (50s)
 
   // calculate adjustment factor
   const scale = (maxv-minv) / (maxp-minp);
