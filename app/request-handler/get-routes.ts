@@ -59,6 +59,14 @@ async function retrieveAndOutputTableData(
   let tableQuery = ''
   if (tableName === 'filterTable') {
     tableQuery = queryGenerator.selectAllFilterColumns(primaryKeys)
+  }else if(tableName==='max'){
+    tableQuery = queryGenerator.selectMaxSchema()
+  }
+  else if(tableName === 'tblProject'){
+    tableQuery = queryGenerator.selectProjectTable()
+  }
+  else if(tableName === 'tblSchema'){
+    tableQuery = queryGenerator.selectSchematbl('1.1.0')
   }
   else {
     tableQuery = queryGenerator.selectAllTableColumns(primaryKeys, tableName)
@@ -66,9 +74,24 @@ async function retrieveAndOutputTableData(
   // outputTableData(tableName, await getResult(tableQuery))
 
   // KBF instead of creating jsons, just returns the data
+  console.log(tableQuery)
   let pool = await poolSelector(request)
-  
+  // console.log(request)
   let returnData = await getResult(tableQuery,pool)
+  return returnData
+}
+
+async function retrievetblSchema(request:any, version:any){
+  let tableQuery
+  if (version!=null || version!=undefined){
+    tableQuery = queryGenerator.selectSchematbl(version)
+  } else {
+    tableQuery = queryGenerator.selectSchematbl('1.1.0')
+  }
+  
+  let pool = await poolSelector(request)
+
+  let returnData = await getResult(tableQuery, pool)
   return returnData
 }
 
@@ -76,13 +99,22 @@ async function retrieveAndOutputTableData(
 function retrieveAndPrintAllTableData(primaryKeys: PostParameters, request:any) {
   // each returned table is stored in an object
   let obj = {}
+  let maxVersion = retrieveAndOutputTableData('max', primaryKeys, request)
+  console.log(maxVersion)
+// 2022-11-04-KBF: added highest version of tblSchema and the whole tblProjects table to result
+  // obj['tblSchema'] = retrievetblSchema(request,maxVersion)
+  obj['tblSchema'] = retrieveAndOutputTableData('tblSchema', primaryKeys, request)
+  obj['tblProject'] = retrieveAndOutputTableData('tblProject', primaryKeys, request)
   obj['filterTable'] = retrieveAndOutputTableData('filterTable', primaryKeys, request)
+  
   for (let tableName of gisDbTableNames) {
     obj[tableName] = retrieveAndOutputTableData(tableName, primaryKeys, request)
   }
   // KBF the object full of tables is returned
   return obj
 }
+
+
 
 // 2022-03-15-CMF: Process and print returned database table data
 // 2022-03-17-CMF: TO DO --- CONVERT GET PROCESSING TO POST PROCESSING

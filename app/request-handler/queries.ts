@@ -111,4 +111,19 @@ export class QueryGenerator {
                     ORDER BY ${dbTableName}."PrimaryKey";`
     return query;
   }
+
+  selectMaxSchema(){
+    const query = `select distinct(max("Version")) from public_test."tblSchema";`
+    return query
+  }
+
+  selectSchematbl(param:any){
+    const query = `select * from public_test."tblSchema" where "Version"='${param}';`
+    return query
+  }
+
+  selectProjectTable(){
+    const query = `select * from public_test."tblProject";`
+    return query
+  }
 } 
